@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/data/1.9.0.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OracleModel="http:///com/ibm/db/models/oracle/oracle.ecore" xmlns:SQLDataTypes="http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore" xmlns:SQLSchema="http:///org/eclipse/datatools/modelbase/sql/schema.ecore" xmlns:datanotation="http:///datanotation.ecore" xmlns:ilvglnotation="http://www.ilog.com/views/8.5.0/LayoutNotationExtensionDefinition" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+<xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/data/1.9.0.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OracleModel="http:///com/ibm/db/models/oracle/oracle.ecore" xmlns:SQLConstraints="http:///org/eclipse/datatools/modelbase/sql/constraints.ecore" xmlns:SQLDataTypes="http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore" xmlns:SQLSchema="http:///org/eclipse/datatools/modelbase/sql/schema.ecore" xmlns:datanotation="http:///datanotation.ecore" xmlns:ilvglnotation="http://www.ilog.com/views/8.5.0/LayoutNotationExtensionDefinition" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
   <OracleModel:OracleDatabase xmi:id="__namEGgDEemMU6QcLZCB8w" name="Database" vendor="Oracle" version="12" schemas="__xrVUGgDEemMU6QcLZCB8w"/>
   <SQLSchema:Schema xmi:id="__xrVUGgDEemMU6QcLZCB8w" name="Schema" tables="_D5T5EGgEEemMU6QcLZCB8w" database="__namEGgDEemMU6QcLZCB8w">
     <eAnnotations xmi:id="__2SvkGgDEemMU6QcLZCB8w" source="diagram">
@@ -10,6 +10,9 @@
             <layoutConstraint xsi:type="notation:Bounds" xmi:id="_D6Df8mgEEemMU6QcLZCB8w"/>
           </children>
           <children xmi:id="_D6Mp4GgEEemMU6QcLZCB8w" type="Key.Compartment">
+            <children xsi:type="notation:Shape" xmi:id="_qYnbIGgFEemMU6QcLZCB8w" type="Key" element="_qYT5IGgFEemMU6QcLZCB8w" fontName="Segoe UI">
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_qYnbIWgFEemMU6QcLZCB8w"/>
+            </children>
             <styles xsi:type="datanotation:DataListCompartmentStyle" xmi:id="_D6Mp4WgEEemMU6QcLZCB8w" sortingKeys="Natural:Ascending"/>
           </children>
           <children xmi:id="_D6Mp4mgEEemMU6QcLZCB8w" type="Column.Compartment">
@@ -46,5 +49,9 @@
     <columns xmi:id="_HsQmQGgEEemMU6QcLZCB8w" name="Column1">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_HsZwMGgEEemMU6QcLZCB8w" name="CHAR" length="5"/>
     </columns>
+    <columns xmi:id="_qYT5IGgFEemMU6QcLZCB8w" name="Prime_Key" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_qYT5IWgFEemMU6QcLZCB8w" name="CHAR" length="5"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_qYdqIGgFEemMU6QcLZCB8w" name="Arsha15_Table_PK" members="_qYT5IGgFEemMU6QcLZCB8w"/>
   </OracleModel:OracleTable>
 </xmi:XMI>
