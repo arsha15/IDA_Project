@@ -19,6 +19,9 @@
             <children xsi:type="notation:Shape" xmi:id="_HsjhMGgEEemMU6QcLZCB8w" type="Column" element="_HsQmQGgEEemMU6QcLZCB8w" fontName="Segoe UI">
               <layoutConstraint xsi:type="notation:Bounds" xmi:id="_HsjhMWgEEemMU6QcLZCB8w"/>
             </children>
+            <children xsi:type="notation:Shape" xmi:id="_WqurcGtLEemSZ4JrZOfQ2Q" type="Column" element="_WprikGtLEemSZ4JrZOfQ2Q" fontName="Segoe UI">
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_WqurcWtLEemSZ4JrZOfQ2Q"/>
+            </children>
             <styles xsi:type="datanotation:DataListCompartmentStyle" xmi:id="_D6Mp42gEEemMU6QcLZCB8w" sortingKeys="Natural:Ascending"/>
           </children>
           <children xmi:id="_D6Mp5GgEEemMU6QcLZCB8w" visible="false" type="Index.Compartment">
@@ -51,6 +54,9 @@
     </columns>
     <columns xmi:id="_qYT5IGgFEemMU6QcLZCB8w" name="Prime_Key" nullable="false">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_qYT5IWgFEemMU6QcLZCB8w" name="CHAR" length="5"/>
+    </columns>
+    <columns xmi:id="_WprikGtLEemSZ4JrZOfQ2Q" name="Column2">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_WprikWtLEemSZ4JrZOfQ2Q" name="CHAR" length="5"/>
     </columns>
     <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_qYdqIGgFEemMU6QcLZCB8w" name="Arsha15_Table_PK" members="_qYT5IGgFEemMU6QcLZCB8w"/>
   </OracleModel:OracleTable>
